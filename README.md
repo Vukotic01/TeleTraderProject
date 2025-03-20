@@ -52,7 +52,7 @@ METHOD:POST
 URL: http://localhost:8080/app/order
 U Postman-u, u sekciji Authorization, izaberite Bearer Token i unesite prethodno dobijeni Authorization token. Takođe, obavezno uklonite eventualni \n karakter na kraju tokena.
 
-Primer tela zahteva:
+Primer tela zahteva za BUY:
 
 {
   "price": 5.5,
@@ -60,16 +60,26 @@ Primer tela zahteva:
   "orderType": "BUY"
 }
 
+Primer tela zahteva za SELL:
+
+{
+  "price": 5.5,
+  "amount": 23.0,
+  "orderType": "SELL"
+}
+
 
 Top 10 Buy Orders (Autorizacija potrebna)
 METHOD:GET
 URL: http://localhost:8080/app/top-buy
-Ova funkcionalnost vraća listu 10 najboljih Buy porudžbina nakon što je izvršeno najmanje 10 Buy/Sell porudžbina.
-Autorizacija se vrši putem Bearer Token.
+Ova funkcionalnost vraća listu 10 najboljih Buy porudžbina sortiranih po ceni.
+Autorizacija se vrši putem Bearer Token kao u prethodnoj metodi.
 
 Top 10 Sell Orders (Autorizacija potrebna)
 METHOD:GET
 URL: http://localhost:8081/app/top-sell
-Ova funkcionalnost vraća listu 10 najboljih Sell porudžbina nakon što je izvršeno najmanje 10 Buy/Sell porudžbina.
-Autorizacija se vrši putem Bearer Token.
+Ova funkcionalnost vraća listu 10 najboljih Sell porudžbina sortiranih po ceni..
+Autorizacija se vrši putem Bearer Token kao u prethodnoj metodi.
+
+Ukoliko imate problema sa pokretanjem ili testiranjem slobodno se obratite na email:veljkovuk4601@gmail.com
 
