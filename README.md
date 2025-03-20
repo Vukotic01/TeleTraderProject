@@ -1,5 +1,7 @@
 TeleTraderProject
+
 Uputstvo za pokretanje
+
 Projekat je razvijen u Java (Spring Boot) tehnologiji, uz korišćenje PostgreSQL baze podataka.
 
 Pokretanje programa
@@ -22,7 +24,8 @@ spring.datasource.username=postgres
 spring.datasource.password=super
 
 
-Funkcionalnosti
+Funkcionalnosti:
+
 Sign-up
 METHOD:POST
 URL: http://localhost:8080/app/sign-up
@@ -37,7 +40,6 @@ Primer objekta za registraciju (lozinka mora ispunjavati sledeće uslove: najman
 
 
 Sign-in
-
 METHOD:GET
 URL: http://localhost:8080/app/sign-in
 U Postman-u, izaberite Authorization tab, odaberite Basic Auth i unesite registrovani email i lozinku.
