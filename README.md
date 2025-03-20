@@ -13,7 +13,7 @@ Konfiguracija baze podataka:
 
 Port baze: 5432
 
-Ime baze: TeleTrader
+Ime baze: TeleTrader (Potrebno je kreirati bazu pod tim imenom u PostgreSQL-u,ja sam koristio PostgreSQL 16)
 
 Username: postgres
 
