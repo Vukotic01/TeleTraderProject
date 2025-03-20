@@ -36,7 +36,7 @@ METHOD:POST
 
 URL: http://localhost:8080/app/sign-up
 
-Primer objekta za registraciju (lozinka mora ispunjavati sledeće uslove: najmanje jedan specijalni karakter, jedno veliko slovo, jedan broj, odgovarajuća dužina):
+Primer JSON objekta za registraciju (lozinka mora ispunjavati sledeće uslove: najmanje jedan specijalni karakter, jedno veliko slovo, jedan broj, odgovarajuća dužina):
 
 
 {
@@ -54,7 +54,7 @@ URL: http://localhost:8080/app/sign-in
 
 U Postman-u, izaberite Authorization tab, odaberite Basic Auth i unesite registrovani email i lozinku.
 
-Primer:
+Primer JSON objekta:
 
 Email: veljkoe@example.com
 Lozinka: @aaaaPpassword123
@@ -70,7 +70,7 @@ URL: http://localhost:8080/app/order
 
 U Postman-u, u sekciji Authorization, izaberite Bearer Token i unesite prethodno dobijeni Authorization token. Takođe, obavezno uklonite eventualni \n karakter na kraju tokena.
 
-Primer tela zahteva za BUY:
+Primer JSON objekta za BUY:
 
 {
   "price": 5.5,
@@ -78,7 +78,7 @@ Primer tela zahteva za BUY:
   "orderType": "BUY"
 }
 
-Primer tela zahteva za SELL:
+Primer JSON objekta za SELL:
 
 {
   "price": 5.5,
